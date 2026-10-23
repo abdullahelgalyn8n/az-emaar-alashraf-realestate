@@ -219,36 +219,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             )}
           </div>
 
-          {/* Direct Page URL display & Copy button */}
-          <div className="flex items-center gap-1.5 shrink-0">
-            <span className="hidden md:inline-block text-[#57534E] font-medium">
-              رابط الصفحة المباشر:
-            </span>
-            <code
-              dir="ltr"
-              data-testid="active-page-route"
-              className="max-w-[165px] sm:max-w-[320px] truncate px-2 py-0.5 rounded bg-white border border-[#D6D0C4] text-[#141413] font-mono text-[11px] font-semibold select-all"
-            >
-              {fullShareUrl}
-            </code>
-            <button
-              type="button"
-              onClick={handleCopyPageUrl}
-              className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-white hover:bg-[#FEF3C7] text-[#141413] border border-[#D6D0C4] font-bold text-[11px] transition-colors cursor-pointer shrink-0"
-            >
-              {copiedLink ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-[#15803D]" />
-                  <span className="text-[#15803D]">تم النسخ</span>
-                </>
-              ) : (
-                <>
-                  <Link2 className="w-3.5 h-3.5 text-[#78470A]" />
-                  <span>نسخ الرابط</span>
-                </>
-              )}
-            </button>
-          </div>
+          
         </div>
       </div>
 
